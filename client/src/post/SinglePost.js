@@ -82,7 +82,7 @@ export default class SinglePost extends Component {
             <div className="card-body" >
                <div className="mb-3 single_post-photo  text-center">
                <img 
-                src={`https://mwidomskibooks.herokuapp.com/api/post/photo/${post._id}`} 
+                src={`https://mw-books.herokuapp.com/api/post/photo/${post._id}`} 
                 alt={post.title}
                 style={{height: '300px'}}
                 onError={i => i.target.src = `${DefaultPhoto}`}

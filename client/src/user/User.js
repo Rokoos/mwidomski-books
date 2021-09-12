@@ -6,7 +6,7 @@ const User = ({user}) =>  (
     <div className="post_item mb-5">
       <div className="post_item-photo">
         <img 
-        src={`https://mwidomskibooks.herokuapp.com/api/user/photo/${user._id}`} 
+        src={`https://mw-books.herokuapp.com/api/user/photo/${user._id}`} 
           alt={user.name}
           onError={i => i.target.src = `${DefaultPhoto}`}
         className="img-fluid z-depth-1 rounded-circle mb-3 mt-3"

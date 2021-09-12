@@ -180,7 +180,7 @@ export default class EditPost extends Component {
   render() {
       const {id, author, title, body, error, redirectToProfile, loading, preview} = this.state
 
-      const photoUrl = id ? `https://mwidomskibooks.herokuapp.com/api/post/photo/${id}?${new Date().getTime()}` :  bookAvatar
+      const photoUrl = id ? `https://mw-books.herokuapp.com/api/post/photo/${id}?${new Date().getTime()}` :  bookAvatar
 
       const ziutek = preview ? preview : photoUrl
 

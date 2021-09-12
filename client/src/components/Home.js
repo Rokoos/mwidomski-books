@@ -27,7 +27,7 @@ export default class Home extends Component {
     <div key={post._id} className="post_item-photo mx-auto mb-2 ml-2 ">
       <Link to={`/post/${post._id}`}>
         <img
-          src={`https://mwidomskibooks.herokuapp.com/api/post/photo/${post._id}`}
+          src={`https://mw-books.herokuapp.com/api/post/photo/${post._id}`}
           alt={post.title}
           onError={i => i.target.src = `${DefaultPhoto}`}
           className="img-thumbnail mb-3 mt-3 post-img" />

@@ -88,7 +88,7 @@ export default class Comment extends Component {
                 const posterName = comment.postedBy.visible === 1  ? comment.postedBy.name : 'Unknown' 
 
                 const posterPhoto = comment.postedBy.visible === 1 ? 
-                `https://mwidomskibooks.herokuapp.com/api/user/photo/${comment.postedBy._id}` : avatar
+                `https://mw-books.herokuapp.com/api/user/photo/${comment.postedBy._id}` : avatar
 
                 return (
                         <div className="mb-4 comment_box" key={i} >

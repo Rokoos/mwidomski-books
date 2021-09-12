@@ -1,5 +1,5 @@
 export const signup = user => {
-    return  fetch(`https://mwidomskibooks.herokuapp.com/api/signup`, {
+    return  fetch(`https://mw-books.herokuapp.com/api/signup`, {
         method: 'POST',
         headers: {
             Accept: "application/json",
@@ -12,7 +12,7 @@ export const signup = user => {
 }
 
 export const signin = user => {
-    return  fetch(`https://mwidomskibooks.herokuapp.com/api/signin`, {
+    return  fetch(`https://mw-books.herokuapp.com/api/signin`, {
         method: 'POST',
         headers: {
             Accept: "application/json",
@@ -27,7 +27,7 @@ export const signin = user => {
 export const signout = () => {
     if(typeof window !== "undefined") localStorage.removeItem('jwt')
 
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/signout`, {
+    return fetch(`https://mw-books.herokuapp.com/api/signout`, {
         method: 'GET'
     }).then(response => {
         return response.json()

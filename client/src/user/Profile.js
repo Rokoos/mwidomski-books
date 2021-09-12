@@ -17,7 +17,7 @@ const Profile = ({match, history}) => {
   const userId = match.params.userId
   
 
-  const photoUrl = user._id ? `https://mwidomskibooks.herokuapp.com/api/user/photo/${user._id}?${new Date().getTime()}` :  avatar
+  const photoUrl = user._id ? `https://mw-books.herokuapp.com/api/user/photo/${user._id}?${new Date().getTime()}` :  avatar
 
   const loadPosts = (userId) => {
     const token = isAuthenticated().token

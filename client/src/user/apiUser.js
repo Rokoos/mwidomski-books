@@ -1,5 +1,5 @@
 export  const fetchUser = (userId, token) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/user/${userId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/user/${userId}`, {
        method: 'GET',
        headers: {
            Accept: "application/json",
@@ -16,7 +16,7 @@ export  const fetchUser = (userId, token) => {
 ////////////////////////////////
 
 export const fetchUsers = () => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/users`)
+    return fetch(`https://mw-books.herokuapp.com/api/users`)
     .then(response => response.json()
     )
     .catch(error => console.log(error)) 
@@ -24,7 +24,7 @@ export const fetchUsers = () => {
 
 ////////////////////////////////
 export const updateUser = (userId, token, user) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/user/${userId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/user/${userId}`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
@@ -42,7 +42,7 @@ export const updateUser = (userId, token, user) => {
 /////////////////////////////
 
 export const remove = (userId, token) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/user/${userId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/user/${userId}`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",

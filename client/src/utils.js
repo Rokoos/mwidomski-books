@@ -23,7 +23,7 @@ import { MDBNavLink} from 'mdbreact'
     )
 export const charNumber = (comment, length) => length - comment.length   
 
-export const getUserPhoto = id => `https://mwidomskibooks.herokuapp.com/api/user/photo/${id}?${new Date().getTime()}`
+export const getUserPhoto = id => `https://mw-books.herokuapp.com/api/user/photo/${id}?${new Date().getTime()}`
 
-export const getPostPhoto = id => `https://mwidomskibooks.herokuapp.com/api/post/photo/${id}?${new Date().getTime()}`
+export const getPostPhoto = id => `https://mw-books.herokuapp.com/api/post/photo/${id}?${new Date().getTime()}`
 

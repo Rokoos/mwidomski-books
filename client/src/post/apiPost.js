@@ -1,5 +1,5 @@
 export const createPost = (userId, token, post) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/new/${userId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/new/${userId}`, {
         method: 'POST',
         headers: {
             Accept: "application/json",
@@ -17,7 +17,7 @@ export const createPost = (userId, token, post) => {
 //////////////////////////////////////////////////
 
 export const postList = () => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/posts`, {
+    return fetch(`https://mw-books.herokuapp.com/api/posts`, {
         method: 'GET'
     })
     .then(response => response.json())
@@ -27,7 +27,7 @@ export const postList = () => {
 /////////////////////////////////////////////
 
 export const listByUser = (userId, token) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/posts/by/${userId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/posts/by/${userId}`, {
         method: 'GET',
         headers: {
             Accept: "application/json",
@@ -43,7 +43,7 @@ export const listByUser = (userId, token) => {
 ///////////////////////////////////////////////
 
 export const singlePost = postId => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/${postId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/${postId}`, {
         method: "GET"
     })
         .then(response => {
@@ -55,7 +55,7 @@ export const singlePost = postId => {
 /////////////////////////////////////////////////
 
 export const updatePost = (postId, token, post) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/${postId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/${postId}`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
@@ -73,7 +73,7 @@ export const updatePost = (postId, token, post) => {
 /////////////////////////////////////////////////
 
 export const remove = (postId, token) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/${postId}`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/${postId}`, {
         method: 'DELETE',
         headers: {
             Accept: "application/json",
@@ -90,7 +90,7 @@ export const remove = (postId, token) => {
 /////////////////////////////////////////////////
 
 export const like = (userId, token, postId) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/like`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/like`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
@@ -109,7 +109,7 @@ export const like = (userId, token, postId) => {
 /////////////////////////////////////////////////
 
 export const unlike = (userId, token, postId) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/unlike`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/unlike`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
@@ -128,7 +128,7 @@ export const unlike = (userId, token, postId) => {
 /////////////////////////////////////////////////
 
 export const comment = (userId, token, postId, comment) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/comment`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/comment`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
@@ -147,7 +147,7 @@ export const comment = (userId, token, postId, comment) => {
 /////////////////////////////////////////////////
 
 export const uncomment = (userId, token, postId, comment) => {
-    return fetch(`https://mwidomskibooks.herokuapp.com/api/post/uncomment`, {
+    return fetch(`https://mw-books.herokuapp.com/api/post/uncomment`, {
         method: 'PUT',
         headers: {
             Accept: "application/json",
